@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
-    gap: 1.5rem;
+    /*gap: 1.5rem;*/
 
     position: absolute;
     width: 46rem;
@@ -18,7 +18,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0;    
+    padding: 0;
+    padding-bottom: 1.5rem; 
 
     width: 46rem;
     height: 1.1875rem;    
