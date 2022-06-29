@@ -1,0 +1,145 @@
+.taskContainer {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.75rem;    
+
+    width: 46rem;
+    height: 4.5rem;
+
+    background: var(--grey-500);
+
+    border: 1px solid var(--grey-400);
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;   
+    
+}
+
+.taskContainer + .taskContainer {
+    margin-top: 0.75rem;
+}
+
+/* Radio Button*/
+
+.round {
+    position: relative;
+}
+
+.round label {
+    position: absolute;
+    background-color: #FFF;
+    border: 2px solid var(--Blue);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0;    
+    top: 0; 
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.round label:hover {
+    border: 2px solid var(--blue-dark);
+}
+
+.round label:after {
+    border: 2px solid #FFF;
+    border-top: none;
+    border-right: none;
+    content: "";
+    position: absolute;
+
+    height: 6px;
+    width: 12px;
+
+    left: 13.64%;
+    right: 13.64%;
+    top: 13.64%;
+    bottom: 13.64%;
+    transform: rotate(-45deg); 
+        
+}
+
+.round input[type="checkbox"] {
+    visibility: hidden;    
+}
+
+.round input[type="checkbox"]:checked + label {
+    background-color: var(--purple-dark);
+    border-color:  var(--purple-dark);
+
+    transition: filter 0.2s;
+}
+
+.round input[type="checkbox"]:checked + label:hover{
+    filter: brightness(0.8);
+    
+}
+
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.taskText {
+    width: 39.5rem;
+    height: 2.5rem;
+    padding-left: 52px;
+
+    margin-top: -16px;
+    padding-top: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 140%;
+
+    color: var(--grey-100);
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.round input[type="checkbox"]:checked ~ p {
+    text-decoration: line-through;
+    color: var(--grey-300);
+}
+
+.taskContainer button {
+    border: none;
+    background: var(--grey-500);
+}
+
+.taskContainer button img {
+    width: 1.5rem;
+    height: 1.5rem;  
+
+    border-radius: 4px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    transition: filter 0.2s;
+}
+
+.taskContainer button img:hover {
+    filter: brightness(0.8);
+}
+
+
+
+
+

@@ -1,0 +1,197 @@
+.tasksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    gap: 1.5rem;
+
+    position: absolute;
+    width: 46rem;
+    height: 17.9375rem;
+    left: calc(50% -  23rem);
+    top: 18.1875rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;    
+
+    width: 46rem;
+    height: 1.1875rem;    
+
+    /*Inside auto layout*/
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.createdTasksContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+
+    width: 8.6875rem;
+    height: 1.1875rem;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.createdText{
+    width: 7.25rem;
+    height: 1.0625rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+
+    color: var(--Blue);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.tasksCount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.125rem 0.5rem;
+    gap: 0.625rem;
+
+    width: 1.5625rem;
+    height: 1.1875rem;
+
+    background: var(--grey-400);
+    color: var(--grey-100);
+    border-radius: 999px;
+}
+
+.doneTasksContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+
+    width: 6.9375rem;
+    height: 1.1875rem;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.doneText{
+    width: 4.875rem;
+    height: 1.0625rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+
+    color: var(--Purple);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.doneTasksContainerCompleted{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+
+    width: 8.625rem;
+    height: 1.1875rem;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.tasksCountCompleted {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*padding: 0.125rem 0.5rem;*/
+    gap: 0.625rem;
+
+    width: 3.25rem;
+    height: 1.1875rem;
+
+    background: var(--grey-400);
+    color: var(--grey-100);
+    border-radius: 999px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.emptyTasksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+    gap: 1rem;
+
+    width: 46rem;
+    height: 15.25rem;
+
+    border-top: 1px solid var(--grey-400);
+    border-radius: 8px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.emptyTasksContainer img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.emptyTasksContainer p {
+    width: 19.625rem;
+    height: 2.75rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+
+    color: var(--grey-300);
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.emptyTasksContainer p span {
+    font-weight: 400;
+}
