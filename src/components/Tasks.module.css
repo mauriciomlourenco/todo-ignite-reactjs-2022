@@ -115,13 +115,15 @@
 }
 
 .doneTasksContainerCompleted{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0;
     gap: 0.5rem;
 
-    width: 8.625rem;
+    margin-right: 0;
+    /*width: 8.625rem;*/
     height: 1.1875rem;
 
     flex: none;
@@ -129,7 +131,7 @@
     flex-grow: 0;
 }
 
-.tasksCountCompleted {
+.tasksCountCompleted {    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -137,7 +139,7 @@
     /*padding: 0.125rem 0.5rem;*/
     gap: 0.625rem;
 
-    width: 3.25rem;
+    /*width: 3.25rem;*/
     height: 1.1875rem;
 
     background: var(--grey-400);
